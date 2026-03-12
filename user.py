@@ -7,7 +7,7 @@ class User:
         self.last_name = last_name
         self.age = age
         self.city = city
-        self.login_attempts = 0
+        self.login_attempts = login_attempts
 
     def describe_user(self):
         print(f"Nama Lengkap: {self.first_name} {self.last_name}")
@@ -19,12 +19,11 @@ class User:
 
     def increment_login_attempts(self):
         self.login_attempts += 1
-        print(f"nilai login bertambah {self.login_attempts}")
+        # print(f"Nilai login bertambah {self.login_attempts}")
 
     def reset_login_attempts(self):
         self.login_attempts = 0
-        print(f"Nilai login_attempts setelah reset: {u.login_attempts}")
-
+        print(f"Nilai login telah direset")
 
 # INSTANCE 
 # ==============================
@@ -44,8 +43,9 @@ u.increment_login_attempts()
 
 # MENCETAK NILAI LOGIN ATTEMPTS
 # ==============================
-print(f"Nilai login_attempts saat ini: {u.login_attempts}")
+print(f"Nilai login saat ini: {u.login_attempts}")
 
 # MEMANGGIL RESET LOGIN ATTEMPTS
 # ==============================
 u.reset_login_attempts()
+print(f"Nilai login setelah reset: {u.login_attempts}")
