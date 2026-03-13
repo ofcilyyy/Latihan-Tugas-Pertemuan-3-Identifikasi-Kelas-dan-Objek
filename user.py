@@ -19,7 +19,6 @@ class User:
 
     def increment_login_attempts(self):
         self.login_attempts += 1
-        # print(f"Nilai login bertambah {self.login_attempts}")
 
     def reset_login_attempts(self):
         self.login_attempts = 0
