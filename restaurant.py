@@ -16,11 +16,10 @@ class Restaurant:
 
     def set_number_served(self, new_number):
         self.number_served = new_number
-        print(f"Jumlah pelanggan yang telah dilayani diatur menjadi {self.number_served} pelanggan.")
 
     def increment_number_served(self, additional):
         self.number_served += additional
-        print(f"Jumlah perlanggan bertambah menjadi {additional} pelanggan. Total pelanggan sekarang {self.number_served}.")
+        print(f"Jumlah pelanggan bertambah menjadi {additional} pelanggan. Total pelanggan sekarang {self.number_served}.")
 
 # INSTANCE 
 # ==============================
@@ -46,8 +45,5 @@ print("Jumlah pelanggan yang telah dilayani sekarang:", restaurant.number_served
 
 # MENAMBAH JUMLAH PELANGGAN
 # ==============================
-restaurant.set_number_served(25)
-
-# TOTAL JUMLAH PELANGGAN
-# ==============================
 restaurant.increment_number_served(15)
+
